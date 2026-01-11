@@ -12,9 +12,9 @@
       thorium = let
         pkgs = import nixpkgs {system = "x86_64-linux";};
         name = "thorium";
-        version = "130.0.6723.174 - 62";
+        version = "M138.0.7204.300 - 64";
         src = pkgs.fetchurl {
-          url = "https://github.com/Alex313031/thorium/releases/download/M130.0.6723.174/thorium_browser_130.0.6723.174_AVX2.AppImage";
+          url = "https://github.com/Alex313031/thorium/releases/download/M138.0.7204.300/Thorium_Browser_138.0.7204.300_AVX2.AppImage";
           sha256 = "sha256-Ej7OIdAjYRmaDlv56ANU5pscuwcBEBee6VPZA3FdxsQ=";
         };
         appimageContents = pkgs.appimageTools.extractType2 {inherit name src;};
